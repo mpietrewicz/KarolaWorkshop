@@ -4,13 +4,13 @@ package zad1;
  * Created by Marek on 2017-03-18.
  */
 public class Account {
-    private int balance;
+    private float balance; // zamiana na float
     private static double oprocentowanie;
 
     public Account () {
     }
 
-    public int stan () {
+    public float stan () { // zamiana na float
         return balance;
     }
 
