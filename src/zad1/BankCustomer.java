@@ -19,7 +19,9 @@ public class BankCustomer {
         return konto; // zwracasz coś pustego - coś co zadeklarowałaś ale go nie wypełniłaś
     }
 
-    void show () {
-        System.out.println("Klient: " + klient.name + " stan konta " + " " + konto.stan() + ".");
-    }
+    @Override
+    public String toString() {
+        return  "Klient: " + klient.name + " stan konta " + " " + konto.stan() + ".";
+    } // musisz nadpisać metodę toString żeby wypisywać to co chcesz
+
 }
